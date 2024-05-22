@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weekly_1</title>
+</head>
+
+<body>
+    <div class="fcontainer">
+        <nav class="wrapper">
+            <div class="brand">
+                <div class="firstname">bpi</div>
+                <div class="lastname">rsml</div>
+            </div>
+            <ul class="navigation">
+                <li><a href="http://localhost:8080/Jobdesk/logo_jadwal.html">home</a></li>
+                <li><a href="http://localhost:8080/Jobdesk/Mingguan%20lantai%201/weekly_lantai1.html" class="active">Weekly</a></li>
+                <li><a href="http://localhost:8080/Jobdesk/Mingguan%20lantai%201/Bulanan%20Lantai%201/bulanan_lantai1.html">monthly</a></li>
+            </ul>
+
+        </nav>
+    </div>
+    <div class="content">
+        <h3>Input weekly lantai 1</h3>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+            </div>
+            <div class="form-group">
+                <label for="date">Tanggal:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="area">Area:</label>
+                <select id="area" name="area" required>
+                    <option value="">--semoga bahagia--</option>
+                    <option value="Corridor">Corridor</option>
+                    <option value="Lobby">Lobby</option>
+                    <option value="Room">Room</option>
+                    <option value="Toilet">Toilet</option>
+                    <option value="Basement">Basement</option>
+                    <option value="Ram">Ram</option>
+                    <option value="Tps">Tps</option>        
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="item">Item:</label>
+                <select id="item" name="item" required>
+                    <option value="">--ngopi aja dulu--</option>
+                    <option value="Canopyr">Canopy</option>
+                    <option value="Ground Tank">Ground Tank</option>
+                    <option value="Room">Room</option>
+                    <option value="Pipa Hidrant & Air">Pipa Hidrant & Air</option>
+                    <option value="Poli Paru">Poli Paru</option>
+                    <option value="Glass">Glass</option>
+                    <option value="Wall">Wall</option>
+                    <option value="Stainless">Stainless</option>
+                    <option value="Gizi">Gizi</option>
+                    <option value="Furniture">Furniture</option>
+                    <option value="Ram">Ram</option>
+                    <option value="Tps Domestik">Tps Domestik</option>
+                    <option value="Spider Web">Spider Web</option>
+                    <option value="Trans Can">Trans Can</option>
+                    <option value="Nomed">Nomed</option>        
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="before">Before:</label>
+                <input type="file" id="before" name="photo1" accept="image/*" required>
+            </div>
+            <div class="form-group">
+                <label for="progres">Progres:</label>
+                <input type="file" id="Progres" name="photo2" accept="image/*">
+            </div>
+            <div class="form-group">
+                <label for="after">After:</label>
+                <input type="file" id="photo3" name="photo3" accept="image/*">
+            </div>
+            <div class="form-group">
+                <button type="submit">Simpan</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

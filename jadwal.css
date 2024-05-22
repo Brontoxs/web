@@ -1,0 +1,112 @@
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(rslogo.png);
+    margin-top: 100px;
+}
+
+.fcontainer {
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+    height: 100px;
+    margin-top: -100px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    padding: 8px;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0);
+}
+
+.brand {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5em;
+    padding: 20px;
+    text-transform: capitalize;
+}
+
+.firstname {
+    color: white;
+    font-weight: 700;
+}
+
+.lastname {
+    color: crimson;
+    font-weight: 400;
+    padding-left: 4px;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation>li {
+    list-style-type: none;
+    padding: 12px;
+}
+
+.navigation>li>a {
+    color: white;
+    font-size: 14px;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+    margin-left: 30px;
+}
+
+.content {
+    margin-top: 50px; /* Menambahkan ruang di atas konten untuk memberikan ruang bagi navbar */
+    padding: 10px;
+}
+.icon-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 kolom di desktop */
+    gap: 5px; /* Mengatur jarak antar ikon */
+    margin-bottom: 15px;
+}
+.icon {
+    width: 50%;
+    height: auto; /* Menjaga rasio aspek gambar */
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-bottom: 55px;
+    margin-block: 15px;
+}
+@media (max-width: 1024px) {
+    .icon-container {
+        grid-template-columns: repeat(4, 1fr); /* 4 kolom di perangkat dengan lebar <= 1024px */
+    }
+}
+@media (max-width: 768px) {
+    .icon-container {
+        grid-template-columns: repeat(3, 1fr); /* 3 kolom di perangkat dengan lebar <= 768px */
+    }
+}
+@media (max-width: 480px) {
+    .icon-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 kolom di perangkat dengan lebar <= 480px */
+        margin-bottom: 15px;
+        margin-top: 20px;
+        margin-left: 50px;
+
+
+
+    }
+}
